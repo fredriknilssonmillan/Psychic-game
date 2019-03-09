@@ -1,0 +1,11 @@
+ok. Mostrarle al usuario las reglas (escoge una letra y tienes 9 oportunidades, si le atinas ganas, si no le atinas pierdes)
+ok. Mostrarle al usuario cuantas rondas tiene ganadas y cuantas tiene perdidas
+Mostrarle al usuario cuantas oportunidades le sobran, en este caso empieza por 9 oportunidades en cada ronda
+ok.Darle a la computadora un rango de letras ("a" a la "z") para que sobre eso pueda tomar una decisión
+ok.En el momento en que se cargue la página, que la computadora haga una elección de una letra del rango anterior y que la variable sea secreta (que no la vea el usuario)
+Que la función anterior se repita cada que se agregue un valor a la variable de perdidas o a la variable de ganadas
+Cuando el usuario le pica a las teclas del teclado, que le vayan apareciendo las teclas que picó en un renglón separado por comas y que le reduzca un dígito el contador de intentos (empieza por 9)
+Si repite una tecla que ya le picó antes, que esa tecla no le aparezca y no le reduzca el contador
+Que las teclas le aparezcan hasta que cambie el indicador de ganar o perder, en el momento en que sucede eso que se desaparezcan las teclas que ya le picó (que se borre el array)
+Si una de las letras que teclea el usuario es igual a la letra que seleccionó la computadora, entonces se resetea el contador en 9 y se le agrega 1 dígito a las ganadas
+Si el contador de intentos sobrantes llega a 0 sin que el usuario haya ganado, entonces se le deberá agregar un valor a la variable de perdidas y el contador de intentos deberá reestablecerse en 9
