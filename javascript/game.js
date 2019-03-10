@@ -25,13 +25,13 @@ var computerGuess = "";
 
 //var computerChoiceText = document.getElementById("computerchoice-text");
 
-window.onload = function aleatorio () {
+function aleatorio () {
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     cGuess.push(computerGuess);
-   // console.log("cGuess " + cGuess);
+  //  console.log("cGuess " + cGuess);
   }
-  
- 
+
+window.onload = aleatorio
 // allow the user to make his guesses 9 times
 // This function is run whenever the user presses a key.
 document.onkeyup = function (event) {
@@ -49,14 +49,15 @@ document.onkeyup = function (event) {
 
     alert("you won, \"" +  userGuess + "\" was the correct letter");
     cGuess = [];
-    console.log("cguess final " + cGuess);
+    // console.log("cguess final " + cGuess);
     
-    console.log("aleatorio nuevo" + cGuess);
+    // console.log("aleatorio nuevo" + cGuess);
 
     // no sé como invocar la mugre función de aleatorio, traté de todas las maneras y no pude, por eso estoy repitiendo todo en lo que sigue.
-    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-    cGuess.push(computerGuess);
-    console.log("cGuess " + cGuess);
+    // var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    // cGuess.push(computerGuess);
+    aleatorio()
+   // console.log("cGuess " + cGuess);
     gleft = 9;
     Guessesleft.textContent = ("You have " + gleft + " more guesses");
     gfar = [];
@@ -70,7 +71,7 @@ document.onkeyup = function (event) {
         // no sé como invocar la mugre función de aleatorio, traté de todas las maneras, por eso estoy repitiendo todo en lo que sigue.
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     cGuess.push(computerGuess);
-    console.log("cGuess " + cGuess);
+   // console.log("cGuess " + cGuess);
     gleft = 9;
     Guessesleft.textContent = ("You have " + gleft + " more guesses");
     gfar = [];
